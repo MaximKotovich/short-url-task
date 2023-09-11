@@ -1,0 +1,47 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .inputs-container{
+    padding: 10px;
+    .text-field-panel{
+      display: flex;
+      flex-direction: row;
+
+      .main-text-field{
+        padding-right: 5px;
+      }
+    }
+    .result-text-field{
+      margin: 10px 0 0 0;
+    }
+  }
+
+  .table-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 3;
+    .table-content{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      .paper{
+        width: 100%;
+        padding: 20px;
+        margin: 5px;
+        a:hover{
+          text-decoration: underline;
+          color: green;
+        }
+      }
+      .pagination{
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
