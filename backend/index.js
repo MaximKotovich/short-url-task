@@ -49,7 +49,7 @@ app.use(session({
     secret: process.env.SECRET_KEY,
     cookie: {
         httpOnly: false,
-        maxAge: null,
+        maxAge: 3600 * 24,
         secure: false,
     },
     store: MongoStore.create({mongoUrl: process.env.MONGO_DB_CONNECTION_STRING})
